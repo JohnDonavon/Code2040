@@ -11,5 +11,5 @@ collection = ast.literal_eval(response.read())
 check = collection["needle"]
 index = collection["haystack"].index(check)
 
-postData = {'token':'76e4355f17281fc74fbda85754ed1e3e','needle':index}
+postData = urllib.urlencode({'token':'76e4355f17281fc74fbda85754ed1e3e','needle':index})
 post = urllib2.urlopen(validateUrl,postData)
