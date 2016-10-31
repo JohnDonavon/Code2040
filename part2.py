@@ -12,5 +12,3 @@ reverseString = string[::-1]
 
 postData = urllib.urlencode({'token':'76e4355f17281fc74fbda85754ed1e3e','string':reverseString})
 post = urllib2.urlopen(validateUrl, postData)
-
-print(string, reverseString)
