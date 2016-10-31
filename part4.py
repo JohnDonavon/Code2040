@@ -16,5 +16,5 @@ for i in array:
 	if not i.startswith(prefix):
 		ansArray.append(i)
 
-postData = urllib.urlencode({'token':'76e4355f17281fc74fbda85754ed1e3e','array':ansArray})
-post = urllib2.urlopen(validateUrl, postData)
+postData = urllib.urlencode({'token':'76e4355f17281fc74fbda85754ed1e3e','array[]':ansArray},True)
+post = urllib2.urlopen(validateUrl,postData)
